@@ -77,10 +77,10 @@
 				// model
 
 				var loader = new THREE.BabylonLoader( manager );
-				loader.load( 'models/babylon/skull.babylon', function ( babylonScene ) {
+				loader.load( 'https://raw.githubusercontent.com/BabylonJS/Website/master/Scenes/Retail/Retail.babylon', function ( babylonScene ) {
 
 					babylonScene.traverse( function ( object ) {
-
+/*
 						if ( object instanceof THREE.Mesh ) {
 
 							object.material = new THREE.MeshPhongMaterial( {
@@ -88,7 +88,7 @@
 							} );
 
 						}
-
+*/
 					} );
 
 					scene = babylonScene;
